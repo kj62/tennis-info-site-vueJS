@@ -1,0 +1,24 @@
+$main-color: #424242;
+$main-bg-img: url('./assets/javascript.jpg');
+$font-standard: 'Nunito', Helvetica, Arial, sans-serif;
+
+@mixin background-object($obj-url, $obj-position-x, $obj-position-y, $obj-size, $obj-repeat) {
+    background-image: $obj-url;
+    background-position-x: $obj-position-x;
+    background-position-y: $obj-position-y;
+    -webkit-background-size: $obj-size;
+    -moz-background-size: $obj-size;
+    -o-background-size: $obj-size;
+    background-size: $obj-size;
+    background-repeat: $obj-repeat;
+}
+
+html {
+    display: block;
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}

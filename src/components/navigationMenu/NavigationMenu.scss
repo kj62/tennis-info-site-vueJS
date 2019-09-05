@@ -1,0 +1,61 @@
+@import '../../settings.scss';
+
+ul.navbar-list {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 auto;
+    width: 100%;
+    max-width: 100%;
+    min-width: 50%;
+    height: 100%;
+    padding-top: 0px;
+    padding-left: 0;
+    margin: 10px 0 30px 0;
+    list-style: none;
+    font-size: 48px;
+    text-shadow: 1px 1px 0px #dbdbdb, 6px 4px 0px rgba(0, 0, 0, 0.15);
+    justify-content: space-around;
+
+    &.small-margin-top {
+        margin-top: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $main-color;
+
+        &:visited {
+            text-decoration: none;
+            color: $main-color;
+        }
+
+        &:active {
+            text-decoration: none;
+            color: $main-color;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    li.nav-item {
+        width: 300px;
+        height: 60px;
+        background-color: rgba(193, 193, 193, 0.8);
+        background-size: cover;
+        border: solid #000 2px;
+        border-radius: 10px;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.15);
+            transition: all 0.25s ease;
+        }
+
+        &.active-card{
+            background-color: #eeeeee;
+            transition: all 0.25s ease;
+        }
+    }
+}
